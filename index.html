@@ -5,7 +5,6 @@
 <title>VueJS - yet another JavaScript Framework</title>
 <link rel="stylesheet" href="reveal.js/css/reveal.css">
 <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
-<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/github.css">
@@ -80,7 +79,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
       <h2>Burning platform</h2>
       <ul>
         <li class="fragment">No dependency management</li>
-        <li class="fragment">No <em>(automated)</em> tests</li>
+        <li class="fragment">No tests</li>
         <li class="fragment">Overcomplicated features</li>
         <li class="fragment">jQuery everywhere</li>
       </ul>
@@ -100,10 +99,41 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
   </section>
   <section>
     <section>
-      <h2>Why</h2>
+      <h2>Why?</h2>
     </section>
     <section>
-      <h2>Ludicrously straightforward</h2>
+      <div id="slide-vue">
+        
+        <h2 v-if="print">
+          {{ message }}
+        </h2>
+      </div>
+
+      <pre class="fragment"><code data-trim>
+<div id="app">
+  <h2 v-if="print">
+    {{ title }}
+  </h2>
+</div>
+      </code></pre>
+      <pre class="fragment"><code data-trim>
+const slide = new Vue({
+  el: '#app',
+  data: {
+    print: true,
+    title: 'Ludicrously straightforward!'
+  }
+})
+      </code></pre>
+      <script>
+const slide = new Vue({
+  el: '#slide-vue',
+  data: {
+    print: true,
+    message: 'Ludicrously straightforward!'
+  }
+})
+      </script>
     </section>
     <section>
       <h2>Declarative</h2>
