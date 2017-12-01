@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VueJS - yet another JavaScript Framework</title>
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/github.css">
+<script src="https://unpkg.com/vue"></script>  
+<!-- Printing and PDF exports -->
+<script>
+var link  = document.createElement( 'link' );
+link.rel  = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+  <section>
+    <h2>VueJS - yet another JavaScript Framework</h2>
+  </section>
+  <section>
+    <section>
+      <h2>A brief history of JavaScript</h2>
+      <aside class="notes">
+        created in 1997 - 20 years ago
+        originaly created to handle click on page
+      </aside>
+    </section>
+    <section>
+      <h2>Browser war</h2>
+      jQuery&amp;co
+    </section>
+    <section>
+      <h2>First Frameworks</h2>
+      angular and co
+    </section>
+    <section>
+      <h2>JavaScript Server Side</h2>
+    </section>
+    <section>
+      <h2>Component Oriented Framworks</h2>
+    </section>
+    <section>
+      <h2>Today</h2>
+      <img src="./img/module-count.png" style="width: 80%;">
+      <aside class="notes">
+        in june 2017: ~500k
+      </aside>
+    </section>
+  </section>
+  <section>
+    <section>
+      <p class="me">Maxence POUTORD</p>
+      <p class="me-link">
+        <a href="https://twitter.com/_maxpou"><i class="fa fa-twitter"></i> @_maxpou</a> |
+        <a href="http://www.maxpou.fr/"><i class="fa fa-globe"></i> maxpou.fr</a> |
+        <a href="mailto:hello@maxpou.fr"><i class="fa fa-envelope-o"></i> hello@maxpou.fr</a>
+      </p>
+    </section>
+    <section>
+      <h2>Like / Dislike</h2>
+    </section>
+    <section>
+      <h2>I like simple things</h2>
+      <p>"Simplicity is the ultimate sophistication." - Leonardo da Vinci</p>
+    </section> 
+    <section>
+      <h2>...but I don't like magic</h2>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Burning platform</h2>
+      <ul>
+        <li class="fragment">No dependency management</li>
+        <li class="fragment">No <em>(automated)</em> tests</li>
+        <li class="fragment">Overcomplicated features</li>
+        <li class="fragment">jQuery everywhere</li>
+      </ul>
+      <img class="fragment" src="./img/wtf.gif">
+      <p class="fragment">Our frontend deserve something better! ❤️</p>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Choosing a Framework in 2017</h2>
+      <img src="./img/farwest.jpg" style="width: 70%;">
+    </section>
+    <section>
+      <h2>Vue.js</h2>
+      <img src="./img/logo.png">
+    </section>
+  </section>
+  <section>
+    <section>
+      <h2>Why</h2>
+    </section>
+    <section>
+      <h2>Ludicrously straightforward</h2>
+    </section>
+    <section>
+      <h2>Declarative</h2>
+      <h4>Tell <u>WHAT</u> you render, instead of <u>HOW</u></h4>
+    </section>
+    <section>
+      <h2>Vue.js + Devtools = ❤️</h2>
+    </section>
+    <section>
+      <h2>What else?</h2>
+      <ul>
+        <li>State management with Vuex</li>
+        <li>Easy to test</li>
+        <li>Live / Hot reload</li>
+        <li>The rest of the JavaScript ecosystem</li>
+      </ul>
+    </section>
+  </section>
+  <section>
+    <h2>Bonus: Server side rendering</h2>
+  </section>
+  <section>
+      <h2>Bonus: Desktop apps</h2>
+      Shopify, Twich, Skype, MongoDB Compass, Postman, Atom, Visual Studio Code, Slack, 🍿 Popcorn times
+      <aside class="notes">
+        because now we can build real APP. Not only animating webpages
+      </aside>
+    </section>
+  <section>
+    <section>
+      <h2>Bonus: Code once run anywhere</h2>
+    </section>
+    <section>
+      <h2></h2>
+      <img src="./img/mobile-1.png" style="width: 50%;">
+    </section>
+    <section>
+      <h2></h2>
+      <img src="./img/mobile-2.png" style="width: 50%;">
+    </section>
+    <section>
+      <h2 class="fragment">Code once run anywhere</h2>
+      <img src="./img/mobile-3.png" style="width: 50%;">
+    </section>
+  </section>
+  <section>
+    <h2>tldl;</h2>
+    <ul>
+      <li>Vue.js will makes our life easier</li>
+      <li>JavaScript is taking over the FrontEnd</li>
+      <li>...and not only!</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Thank You.</h2>
+  </section>
+  <section>
+    <section>
+      <h2>Backup slides</h2>
+    </section>
+  </section>
+</div>
+</div>
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  slideNumber: true,
+  history: true,
+  center: true,
+  width: 1000,
+  height: 700,
+
+  transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+// Optional reveal.js plugins
+dependencies: [
+  { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+  { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+  { src: 'reveal.js/plugin/notes/notes.js', async: true }
+]
+});
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67868977-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
