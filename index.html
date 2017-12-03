@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>VueJS - yet another JavaScript Framework</title>
+<title>Vue.js - Yet another JavaScript Framework</title>
 <link rel="stylesheet" href="reveal.js/css/reveal.css">
 <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/github.css">
-<script src="https://unpkg.com/vue"></script>  
+<script src="https://unpkg.com/vue"></script>
 <!-- Printing and PDF exports -->
 <script>
 var link  = document.createElement( 'link' );
@@ -22,29 +22,34 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <div class="reveal">
 <div class="slides">
   <section>
-    <h2>VueJS - yet another JavaScript Framework</h2>
+    <h2>Vue.js - yet another JavaScript Framework</h2>
+    <p class="me">Maxence POUTORD</p>
+    <p class="me-link">
+      <a href="https://twitter.com/_maxpou"><i class="fa fa-twitter"></i> @_maxpou</a> |
+      <a href="http://www.maxpou.fr/"><i class="fa fa-globe"></i> maxpou.fr</a> |
+      <a href="mailto:hello@maxpou.fr"><i class="fa fa-envelope-o"></i> hello@maxpou.fr</a>
+    </p>
   </section>
   <section>
     <section>
       <h2>A brief history of JavaScript</h2>
+      <img src="./img/timeline.png" class="fragment">
       <aside class="notes">
         created in 1997 - 20 years ago
         originaly created to handle click on page
       </aside>
     </section>
     <section>
-      <h2>Browser war</h2>
-      jQuery&amp;co
-    </section>
-    <section>
-      <h2>First Frameworks</h2>
-      angular and co
-    </section>
-    <section>
       <h2>JavaScript Server Side</h2>
+      <aside class="notes">Node 2009</aside>
     </section>
     <section>
-      <h2>Component Oriented Framworks</h2>
+      <h2>A world of components</h2>
+      <img src="./img/blog.png" style="width: 70%;">
+      <aside class="notes">
+        react 2011
+        A component is a small, potentially re-usable set of logic, behaviors and interface elements (UI or API). And without components or component-based UI development, our applications become monolithic spaghetti monsters and nightmares.
+      </aside>
     </section>
     <section>
       <h2>Today</h2>
@@ -52,26 +57,6 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
       <aside class="notes">
         in june 2017: ~500k
       </aside>
-    </section>
-  </section>
-  <section>
-    <section>
-      <p class="me">Maxence POUTORD</p>
-      <p class="me-link">
-        <a href="https://twitter.com/_maxpou"><i class="fa fa-twitter"></i> @_maxpou</a> |
-        <a href="http://www.maxpou.fr/"><i class="fa fa-globe"></i> maxpou.fr</a> |
-        <a href="mailto:hello@maxpou.fr"><i class="fa fa-envelope-o"></i> hello@maxpou.fr</a>
-      </p>
-    </section>
-    <section>
-      <h2>Like / Dislike</h2>
-    </section>
-    <section>
-      <h2>I like simple things</h2>
-      <p>"Simplicity is the ultimate sophistication." - Leonardo da Vinci</p>
-    </section> 
-    <section>
-      <h2>...but I don't like magic</h2>
     </section>
   </section>
   <section>
@@ -86,8 +71,6 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
       <img class="fragment" src="./img/wtf.gif">
       <p class="fragment">Our frontend deserve something better! ❤️</p>
     </section>
-  </section>
-  <section>
     <section>
       <h2>Choosing a Framework in 2017</h2>
       <img src="./img/farwest.jpg" style="width: 70%;">
@@ -103,9 +86,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     </section>
     <section>
       <div id="slide-vue">
-        
+
         <h2 v-if="print">
-          {{ message }}
+          {{ title }}
         </h2>
       </div>
 
@@ -130,7 +113,7 @@ const slide = new Vue({
   el: '#slide-vue',
   data: {
     print: true,
-    message: 'Ludicrously straightforward!'
+    title: 'Ludicrously straightforward!'
   }
 })
       </script>
@@ -153,26 +136,25 @@ const slide = new Vue({
     </section>
   </section>
   <section>
-    <h2>Bonus: Server side rendering</h2>
-  </section>
-  <section>
-      <h2>Bonus: Desktop apps</h2>
+    <section>
+      <h2>Perspectives</h2>
+    </section>
+    <section>
+      <h2>#1 - Server side rendering</h2>
+    </section>
+    <section>
+      <h2>#2 - Desktop apps</h2>
       Shopify, Twich, Skype, MongoDB Compass, Postman, Atom, Visual Studio Code, Slack, 🍿 Popcorn times
       <aside class="notes">
         because now we can build real APP. Not only animating webpages
       </aside>
     </section>
-  <section>
     <section>
-      <h2>Bonus: Code once run anywhere</h2>
+      <h2>#3 - Code once run anywhere</h2>
     </section>
     <section>
-      <h2></h2>
+      <h2>&nbsp;</h2>
       <img src="./img/mobile-1.png" style="width: 50%;">
-    </section>
-    <section>
-      <h2></h2>
-      <img src="./img/mobile-2.png" style="width: 50%;">
     </section>
     <section>
       <h2 class="fragment">Code once run anywhere</h2>
@@ -182,13 +164,18 @@ const slide = new Vue({
   <section>
     <h2>tldl;</h2>
     <ul>
-      <li>Vue.js will makes our life easier</li>
-      <li>JavaScript is taking over the FrontEnd</li>
-      <li>...and not only!</li>
+      <li class="fragment">JavaScript allow to create real FrontEnd apps</li>
+      <li class="fragment">...and not only!</li>
+      <li class="fragment">Vue.js will makes our life easier</li>
     </ul>
   </section>
   <section>
     <h2>Thank You.</h2>
+    <h3>Questions?</h3>
+    <p class="me-link">
+      <a href="https://twitter.com/_maxpou"><i class="fa fa-twitter"></i> @_maxpou</a> -
+      <a href="http://www.maxpou.fr/"><i class="fa fa-globe"></i> maxpou.fr</a>
+    </p>
   </section>
   <section>
     <section>
