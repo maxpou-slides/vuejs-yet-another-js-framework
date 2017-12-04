@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/github.css">
 <script src="https://unpkg.com/vue"></script>
+<link rel="stylesheet" href="./demo/static/index.css">
 <!-- Printing and PDF exports -->
 <script>
 var link  = document.createElement( 'link' );
@@ -45,11 +46,19 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
     </section>
     <section>
       <h2>A world of components</h2>
-      <img src="./img/blog.png" style="width: 70%;">
+      <img src="./img/blog.png" class="fragment" style="width: 90%;">
       <aside class="notes">
         react 2011
         A component is a small, potentially re-usable set of logic, behaviors and interface elements (UI or API). And without components or component-based UI development, our applications become monolithic spaghetti monsters and nightmares.
       </aside>
+    </section>
+    <section>
+      <h2>A world of components</h2>
+      <img src="./img/blog-component-1.png" style="width: 90%;">
+    </section>
+    <section>
+      <h2>A world of components</h2>
+      <img src="./img/blog-component-2.png" style="width: 90%;">
     </section>
     <section>
       <h2>Today</h2>
@@ -122,8 +131,9 @@ const slide = new Vue({
       <h2>Declarative</h2>
       <h4>Tell <u>WHAT</u> you render, instead of <u>HOW</u></h4>
     </section>
-    <section>
+    <section style="top: 0px; display: block;">
       <h2>Vue.js + Devtools = ❤️</h2>
+      <div id="demo"></div>
     </section>
     <section>
       <h2>What else?</h2>
@@ -150,7 +160,7 @@ const slide = new Vue({
       </aside>
     </section>
     <section>
-      <h2>#3 - Code once run anywhere</h2>
+      <h2>#3 - Code once, run anywhere</h2>
     </section>
     <section>
       <h2>&nbsp;</h2>
@@ -221,5 +231,9 @@ dependencies: [
   ga('create', 'UA-67868977-1', 'auto');
   ga('send', 'pageview');
 </script>
+<!-- demo VueJS -->
+<script type=text/javascript src=./demo/dist/static/js/manifest.f807122b42582f0637f8.js></script>
+<script type=text/javascript src=./demo/dist/static/js/vendor.b6cafaad789d78bbfb14.js></script>
+<script type=text/javascript src=./demo/dist/static/js/app.bdbed4f2a09208e7aaec.js></script>
 </body>
 </html>
