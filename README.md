@@ -5,3 +5,5 @@
 ```
 $ git clone https://github.com/maxpou-slides/vuejs-yet-another-js-framework --recursive
 ```
+
+Devtools are required for this presentation: https://github.com/vuejs/vue-devtools#installation
