@@ -22,7 +22,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 <body>
 <div class="reveal">
 <div class="slides">
-  <section>
+  <section data-background-image="img/background.png">
     <h2>Vue.js - yet another JavaScript Framework</h2>
     <p class="me">Maxence POUTORD</p>
     <p class="me-link">
@@ -153,9 +153,11 @@ const slide = new Vue({
     <section>
       <h2>#1 - Server side rendering</h2>
     </section>
-    <section data-background-image="img/csr.png">
+    <section>
+      <img src="img/csr.png" alt="client side rendering">
     </section>
-    <section data-background-image="img/ssr.png">
+    <section>
+      <img src="img/ssr.png" alt="server side rendering">
     </section>
     <section>
       <h2>#2 - Desktop apps</h2>
@@ -204,6 +206,13 @@ const slide = new Vue({
         <li><a href="https://www.youtube.com/watch?v=8qCociUB6aQ">[Youtube] How Airbnb Is Using React Native</a></li>
         <li><a href="https://code.facebook.com/posts/895897210527114/dive-into-react-native-performance/">[code.facebook.com] Dive into React Native performance</a></li>
       </ul>
+    </section>
+    <section>
+      <div style="width: 50%;margin: 0 auto;">
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/NodeJS?src=hash&amp;ref_src=twsrc%5Etfw">#NodeJS</a> helps you succeed in the things that matter the most 🚀<br><br>⏰ 68% Increased Developer Productivity<br>🏆 65% Improved Developer Satisfaction<br>💰 58% Reduced Development Costs<br>🔝 50% Increased application performance  <br><br>*stats courtesy of <a href="https://twitter.com/nodejs?ref_src=twsrc%5Etfw">@nodejs</a> <a href="https://t.co/kGLV9wiFGy">pic.twitter.com/kGLV9wiFGy</a></p>&mdash; nearForm (@nearForm) <a href="https://twitter.com/nearForm/status/936538657984565248?ref_src=twsrc%5Etfw">December 1, 2017</a></blockquote>
+      </div>
+      <i>Source: <a href="https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/11/Nodejs_2017_User_Survey_Exec_Sum.pdf">2017 Node.js User Survey</a></i>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </section>
   </section>
 </div>
