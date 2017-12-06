@@ -106,3 +106,7 @@ kbd {
 .red {
   color: red;
 }
+
+.no-uppercase {
+  text-transform: initial !important;
+}
