@@ -77,7 +77,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
         <li class="fragment">jQuery everywhere</li>
       </ul>
       <img class="fragment" src="./img/wtf.gif">
-      <p class="fragment">Our frontend deserves something better! ❤️</p>
+      <p class="fragment">Our frontend deserves something better! <i class="fa fa-heart red"></i></p>
     </section>
     <section>
       <h2>Choosing a Framework in 2017</h2>
@@ -131,7 +131,7 @@ const slide = new Vue({
       <h4>Tell <u>WHAT</u> you render, instead of <u>HOW</u></h4>
     </section>
     <section style="top: 0px; display: block;">
-      <h2>Vue.js + Devtools = ❤️</h2>
+      <h2>Vue.js + Devtools = <i class="fa fa-heart red"></i></h2>
       <div id="demo"></div>
     </section>
     <section>
@@ -150,6 +150,10 @@ const slide = new Vue({
     </section>
     <section>
       <h2>#1 - Server side rendering</h2>
+    </section>
+    <section data-background-image="img/csr.png">
+    </section>
+    <section data-background-image="img/ssr.png">
     </section>
     <section>
       <h2>#2 - Desktop apps</h2>
@@ -177,6 +181,7 @@ const slide = new Vue({
       <li class="fragment">...and not only!</li>
       <li class="fragment">Vue.js will makes our life easier</li>
     </ul>
+    <img src="./img/sheep-kid.gif" class="fragment" style="width: 50%;">
   </section>
   <section>
     <h2>Thank You.</h2>
@@ -190,6 +195,14 @@ const slide = new Vue({
     <section>
       <h2>Backup slides</h2>
     </section>
+    <section>
+      <h2>Link</h2>
+      <ul>
+        <li><a href="https://medium.com/walmartlabs/the-benefits-of-server-side-rendering-over-client-side-rendering-5d07ff2cefe8">[Medium] CSR vs SSR at Wallmart</a></li>
+        <li><a href="https://www.youtube.com/watch?v=8qCociUB6aQ">[Youtube] How Airbnb Is Using React Native</a></li>
+        <li><a href="https://code.facebook.com/posts/895897210527114/dive-into-react-native-performance/">[code.facebook.com] Dive into React Native performance</a></li>
+      </ul>
+    </section>
   </section>
 </div>
 </div>
@@ -200,7 +213,7 @@ const slide = new Vue({
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
   controls: true,
-  progress: true,
+  progress: false,
   slideNumber: true,
   history: true,
   center: true,
